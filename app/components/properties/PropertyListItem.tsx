@@ -2,7 +2,7 @@ import React from 'react'
 
 const PropertyListItem = () => {
   return (
-    <div>PropertyListItem</div>
+    <p>PropertyListItem</p>
   )
 }
 
