@@ -11,8 +11,11 @@ const PropertyDetailPage = () => {
           alt=""
           className="object-cover h-full w-full"/>
          </div>
-         <div className=''>
-
+         <div className='mt-4 grid grid-cols-1 md:grid-cols-5 gap-4'>
+            <div className='py-6 pr-6 col-span-3'>
+                <h1 className='mb-4 text-4xl'>Property name</h1>
+                <span className='mb-6 block text-lg text-gray-500'>4 gutes - 2 bedrooms - something</span>
+            </div>
          </div>
     </div>
   )
