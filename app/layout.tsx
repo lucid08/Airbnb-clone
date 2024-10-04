@@ -25,17 +25,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const content = (<p>irhgirhgghb</p>);
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <div className="pt-32">
-
-        {children}
-        </div>
-        <Model/>
+        <div className="pt-32">{children}</div>
+        <Model label="TIme pass" content={content} isOpen={true}/>
       </body>
     </html>
   );
