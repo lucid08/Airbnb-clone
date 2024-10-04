@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Model from "./components/models/Model";
+import LoginModel from "./components/models/LoginModel";
+import SignupModel from "./components/models/SignupModel";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,7 +35,8 @@ export default function RootLayout({
       >
         <Navbar />
         <div className="pt-32">{children}</div>
-        <Model label="TIme pass" content={content} isOpen={true}/>
+        <LoginModel />
+        <SignupModel/>
       </body>
     </html>
   );
